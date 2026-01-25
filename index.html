@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="WebStudio descriptiom meta tag content" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Effective Solutions for Your Business</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-----------------HEADER---------------- -->
     <header class="page-header">
       <div class="container header-container">
         <nav class="header-nav">
@@ -58,14 +59,84 @@
           </ul>
         </address>
 
-        <button class="burger-btn" type="button">
+        <button class="burger-btn" type="button" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-burger-btn"></use>
           </svg>
         </button>
       </div>
+      <!----------- Mobile menu -->
+      <div class="mobile-menu is-open" data-menu>
+        <div class="container mobile-menu-container">
+          <button type="button" class="mobile-menu-close-btn" data-menu-close>
+            <svg class="close-btn" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Studio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../contacts.html">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address>
+            <ul class="contacts-list">
+              <li class="contacts-item">
+                <a class="contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="contacts-item">
+                <a class="contacts-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="mobile-social">
+            <ul class="social-list">
+              <li>
+                <a class="social-link" href="">
+                  <svg class="social-icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-insta"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="social-link" href="">
+                  <svg class="social-icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="social-link" href="">
+                  <svg class="social-icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="social-link" href="">
+                  <svg class="social-icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
+      <!-- Hero section -->
       <section class="hero-image section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -563,5 +634,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
