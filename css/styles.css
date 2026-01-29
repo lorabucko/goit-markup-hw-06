@@ -1039,6 +1039,7 @@ footer .social-link:focus {
 @media screen and (min-width: 768px) {
     .modal {
     width: 408px;
-    /* height: 584px; */
-    padding: 72px 24px 24px 24px;}
+    height: 584px;
+    padding: 72px 24px 24px 24px;
+}
 }
