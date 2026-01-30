@@ -766,9 +766,11 @@ footer .social-link:focus {
     flex-direction: column;
     gap: 40px;
 }
-.mobile-nav-list :first-child a, .contacts-list :first-child a{
+.mobile-nav-list :first-child a, 
+.mobile-menu .contacts-list :first-child a{
     color: var(--ocean);
 }
+
 .mobile-menu-close-btn {
     position: absolute;
     top: 24px;
